@@ -6,7 +6,6 @@ use Drupal\Core\Menu\LocalTaskDefault;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\node\Entity\Node;
-use Drupal\node\NodeInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -17,7 +16,9 @@ class ToggleStickyTogglerLocalTask extends LocalTaskDefault {
   use StringTranslationTrait;
 
   /**
-   * @var NodeInterface $node .
+   * A node object.
+   *
+   * @var \Drupal\node\Entity\NodeInterface
    */
   protected $node;
 
