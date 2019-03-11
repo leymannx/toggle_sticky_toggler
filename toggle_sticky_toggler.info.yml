@@ -1,4 +1,6 @@
 name: 'Toggle Sticky Toggler'
+description: 'Toggle the sticky status of a node from a local task tab.'
+package: Utility
+
 type: module
-description: 'Lorem ipsum dolor sit amet.'
 core: 8.x
