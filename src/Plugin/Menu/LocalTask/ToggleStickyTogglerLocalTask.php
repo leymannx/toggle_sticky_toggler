@@ -26,6 +26,7 @@ class ToggleStickyTogglerLocalTask extends LocalTaskDefault {
    * {@inheritdoc}
    */
   public function getRouteParameters(RouteMatchInterface $route_match) {
+
     $this->node = Node::load($route_match->getRawParameter('node'));
 
     return parent::getRouteParameters($route_match);
@@ -35,6 +36,7 @@ class ToggleStickyTogglerLocalTask extends LocalTaskDefault {
    * {@inheritdoc}
    */
   public function getTitle(Request $request = NULL) {
+
     return $this->node->isSticky() ? $this->t('Unmake Sticky') : $this->t('Make Sticky');
   }
 
